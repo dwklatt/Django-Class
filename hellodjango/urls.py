@@ -8,9 +8,9 @@ from timer.views import hello, current_datetime, hours_ahead
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', controllers.index),    
-    url(r'^hello/$', hello), 
-    url(r'^time/$', current_datetime),
-    url(r'^time/plus/(\d{1,2})/$', hours_ahead), 
+    url(r'^hello/$', hello, name="hello"), 
+    url(r'^time/$', current_datetime, name="timer"),
+    url(r'^time/plus/(\d{1,2})/$', hours_ahead, name="timeplus"), 
     # url(r'^hellodjango/', include('hellodjango.foo.urls')),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

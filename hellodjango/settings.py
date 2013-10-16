@@ -4,7 +4,7 @@ import os
 
 ROOT = os.path.abspath(os.path.dirname( __file__ ) )
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -132,6 +132,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
 	'testapp',
 	'timer',
+    'polls',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
